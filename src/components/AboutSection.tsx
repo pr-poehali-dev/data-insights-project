@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
 
 const values = [
-  { title: "Качество", description: "Высококлассные решения, соответствующие самым высоким стандартам" },
-  { title: "Доступность", description: "Профессиональные сайты по честным и прозрачным ценам" },
-  { title: "Прозрачность", description: "Четкая коммуникация без скрытых платежей" },
-  { title: "Клиентоориентированность", description: "Ваши цели и пожелания всегда в приоритете" },
-  { title: "Масштабируемость", description: "Сайты, которые растут вместе с вашим бизнесом" },
-  { title: "Гибкость", description: "Быстрая адаптация под меняющиеся потребности" },
+  { title: "Полный цикл", description: "От анализа и проектирования до запуска, SEO и поддержки — всё в одном месте" },
+  { title: "Прозрачность", description: "Фиксированные сроки, чёткое ТЗ и понятная стоимость без скрытых платежей" },
+  { title: "Качество кода", description: "Чистый, масштабируемый код с документацией — сайт работает быстро и без сбоев" },
+  { title: "Клиентоориентированность", description: "Ваш бизнес в центре внимания — слушаем, предлагаем, реализуем" },
+  { title: "Масштабируемость", description: "Архитектура, которая растёт вместе с вашим бизнесом без переписывания с нуля" },
+  { title: "Поддержка 24/7", description: "Всегда на связи — оперативно реагируем на любые вопросы и задачи" },
 ]
 
 const stats = [
-  { number: "50+", label: "Проектов" },
-  { number: "45+", label: "Довольных клиентов" },
-  { number: "30+", label: "Созданных логотипов" },
-  { number: "3+", label: "Года опыта" },
+  { number: "100+", label: "Проектов" },
+  { number: "80+", label: "Довольных клиентов" },
+  { number: "50+", label: "Приложений" },
+  { number: "5+", label: "Лет опыта" },
 ]
 
 export function AboutSection() {
@@ -27,19 +27,19 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
             <Sparkles className="h-4 w-4" />
-            О CodeCraft
+            О ONETWOWEB
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Качество, которое{" "}
+            Результат, который{" "}
             <span className="text-primary relative">
-              впечатляет
+              говорит сам
               <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none">
                 <path d="M0 4C50 2 150 6 200 4" stroke="currentColor" strokeWidth="2" className="text-primary" />
               </svg>
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Создание сайта не должно быть дорогим. Мы разрабатываем индивидуальные решения, которые идеально соответствуют пожеланиям каждого клиента.
+            ONETWOWEB — digital-агентство полного цикла. Мы берём проект от первой идеи и доводим до работающего продукта, который приносит реальные заявки и деньги.
           </p>
         </div>
 

@@ -4,39 +4,42 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Лендинг",
+    price: "49 900",
     features: [
-      "До 5 страниц",
+      "Одностраничный сайт",
       "Адаптивный дизайн",
       "Базовая SEO-оптимизация",
       "Форма обратной связи",
+      "Подключение домена и хостинга",
       "1 месяц поддержки",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Бизнес-сайт",
+    price: "149 900",
     features: [
       "До 15 страниц",
-      "Премиум-дизайн",
+      "Премиум UI/UX дизайн",
+      "Личный кабинет пользователя",
+      "Панель администратора",
       "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
+      "Интеграция с CRM / API",
       "3 месяца поддержки",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Под ключ",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Сайт + мобильное приложение",
+      "Сложная бизнес-логика",
+      "Полный фронтенд и бэкенд",
+      "SEO-продвижение в комплекте",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "12 месяцев поддержки",
     ],
     highlighted: false,
   },
@@ -63,7 +66,7 @@ export function PricingSection() {
             Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            От простого лендинга до сложной платформы с личными кабинетами — найдём решение под любой бюджет
           </p>
         </div>
 
@@ -112,7 +115,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Обсудить проект" : "Выбрать тариф"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>

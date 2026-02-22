@@ -4,40 +4,36 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Корпоративный сайт застройщика",
+    category: "Веб-разработка + CRM",
+    image: "/professional-corporate-website.png",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Многостраничный корпоративный сайт с личным кабинетом покупателя, интеграцией с CRM и онлайн-ипотечным калькулятором. Рост заявок на 40% в первый месяц.",
+    tags: ["React", "Node.js", "PostgreSQL", "CRM"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Интернет-магазин электроники",
+    category: "E-commerce + Личный кабинет",
+    image: "/modern-ecommerce-website.png",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Полнофункциональный магазин с каталогом, корзиной, личным кабинетом пользователя, панелью администратора и интеграцией платёжных систем.",
+    tags: ["React", "Python", "PostgreSQL", "REST API"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Ресторан — сайт и приложение",
+    category: "Сайт + Мобильное приложение",
+    image: "/restaurant-website-design.png",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Сайт с онлайн-бронированием столиков и мобильное приложение для доставки еды. Личный кабинет клиента, история заказов, программа лояльности.",
+    tags: ["React Native", "React", "Node.js", "Firebase"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Портфолио и продвижение",
+    category: "SEO + Веб-дизайн",
+    image: "/creative-portfolio-website.png",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Разработали продающий сайт и провели комплексное SEO-продвижение. Вывели 15 ключевых запросов в топ-3 Google за 3 месяца, трафик вырос в 5 раз.",
+    tags: ["SEO", "React", "Tailwind CSS", "Analytics"],
   },
 ]
 
@@ -48,7 +44,7 @@ export function PortfolioSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Реальные проекты — сайты, приложения и системы с личными кабинетами, которые помогают нашим клиентам расти.
           </p>
         </div>
 
@@ -69,9 +65,9 @@ export function PortfolioSection() {
                     size="sm"
                     variant="secondary"
                     className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
+                    onClick={() => {}}
                   >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
+                    Подробнее о проекте <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>
